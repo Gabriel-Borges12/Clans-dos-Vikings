@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/vikingsdaoras.css">
     <title>Cadastre seu personagem</title>
 </head>
+
 <body>
-    
+    <div class="form">
+        <h1>Criação de Personagem</h1>
+        <form>
+            <label for="nome" class="label">Nome do Personagem:</label>
+            <input id="nome" type="text" required>
+            <label for="Classe" class="label">Classe:</label>
+            <select name="Classe" id="Classe" required>
+                <option value="Sorcerer">Sorcerer</option>
+                <option value="Knight">Knight</option>
+                <option value="Druid">Druid</option>
+                <option value="Paladin">Paladin</option>
+            </select>
+            <label for="Servidor" class="label">Servidor:</label>
+            <select name="Servidor" id="Servidor" required>
+                <option value="BR">BR</option>
+                <option value="EUA">EUA</option>
+                <option value="POR">POL</option>
+            </select>
+            <label for="Cidade" class="label">Cidade de Origem:</label>
+            <select name="Cidade" id="Cidade" required>
+                <option value="Carlin">Carlin</option>
+                <option value="Silbeh">Silbeh</option>
+                <option value="Roseland">Roseland</option>
+                <option value="Marie Violet"></option>
+            </select>
+            <input type="email" name="" id="email" required>
+            <input type="password" name="" id="senha" required>
+            <button onclick="criar()" id="botao-criar">Criar Personagem</button>
+        </form>
+    </div>
+    <div class="personagem-criado">
+        <h1>Informações do Jogador Criado</h1>
+        <div class="info">
+            <h5>Nome:</h5>
+            <span id="nome-aws"></span>
+            <h5>Classe:</h5>
+            <span id="classe-aws"></span>
+            <h5>Servidor</h5>
+            <span id="serv-aws"></span>
+        </div>
+    </div>
 </body>
+
 </html>
