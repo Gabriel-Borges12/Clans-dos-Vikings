@@ -10,45 +10,74 @@
 </head>
 
 <body>
-    <div class="form">
-        <h1>Criação de Personagem</h1>
-        <form>
-            <label for="nome" class="label">Nome do Personagem:</label>
-            <input id="nome" type="text" required>
-            <label for="Classe" class="label">Classe:</label>
-            <select name="Classe" id="classe" required>
+    <div class="corpo">
+        <div class="form">
+            <h1>Criação de Personagem</h1>
+            <form>
+                <div>
+                    <label for="nome" class="label">Nome do Personagem:</label>
+                </div>
+                <div>
+                    <input id="nome" type="text" required>
+                </div>
+                <div>
+                    <label for="Classe" class="label">Classe:</label>
+                </div>
+                <div>
+                    <select name="Classe" id="Classe" required>
+                </div>
                 <option value="Sorcerer">Sorcerer</option>
                 <option value="Knight">Knight</option>
                 <option value="Druid">Druid</option>
                 <option value="Paladin">Paladin</option>
-            </select>
-            <label for="Servidor" class="label">Servidor:</label>
-            <select name="Servidor" id="servidor" required>
+                </select>
+                <div>
+                    <label for="Servidor" class="label">Servidor:</label>
+                </div>
+                <div>
+                    <select name="Servidor" id="Servidor" required>
+                </div>
                 <option value="BR">BR</option>
                 <option value="EUA">EUA</option>
                 <option value="POR">POL</option>
-            </select>
-            <label for="Cidade" class="label">Cidade de Origem:</label>
-            <select name="Cidade" id="cidade" required>
+                </select>
+                <div>
+                    <label for="Cidade" class="label">Cidade de Origem:</label>
+                </div>
+                <div>
+                    <select name="Cidade" id="Cidade" required>
+                </div>
                 <option value="Carlin">Carlin</option>
                 <option value="Silbeh">Silbeh</option>
                 <option value="Roseland">Roseland</option>
-                <option value="Marie Violet"></option>
-            </select>
-            <input type="email" name="" id="email" required>
-            <input type="password" name="" id="senha" required>
-            <input onclick="criar()" id="botao-criar" type="button" value="Criar Personagem"></input>
-        </form>
-    </div>
-    <div class="personagem-criado">
-        <h1>Informações do Jogador Criado</h1>
-        <div class="info">
-            <h5>Nome:</h5>
-            <span id="nome-aws"></span>
-            <h5>Classe:</h5>
-            <span id="classe-aws"></span>
-            <h5>Servidor</h5>
-            <span id="serv-aws"></span>
+                <option value="Marie Violet">Marie Violet</option>
+                </select>
+                <div>
+                    <label for="email" class="label">E-mail:</label>
+                </div>
+                <div>
+                    <input type="email" name="" id="email" required>
+                </div>
+                <div>
+                    <label for="email" class="label">Senha:</label>
+                    <div>
+                        <input type="password" name="" id="senha" required>
+                    </div>
+                    <div>
+                        <button onclick="criar()" id="botao-criar">Criar Personagem</button>
+                    </div>
+            </form>
+        </div>
+        <div class="personagem-criado">
+            <h1>Informações do Jogador Criado</h1>
+            <div class="info">
+                <h5>Nome:</h5>
+                <span id="nome-aws"></span>
+                <h5>Classe:</h5>
+                <span id="classe-aws"></span>
+                <h5>Servidor</h5>
+                <span id="serv-aws"></span>
+            </div>
         </div>
     </div>
 </body>
